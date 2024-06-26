@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={showPopup} className="donate-button" style={{ opacity: isVisible ? 0 : 1, transition: 'opacity 0.5s' }}>Donate</button>
+      <button onClick={showPopup} className="donate-button" style={{ opacity: isVisible ? 0 : 1, transition: 'opacity 0.5s' }}>Support GrowNYC</button>
       {shouldRender && (
         <div style={{
           opacity: isVisible ? 1 : 0,
