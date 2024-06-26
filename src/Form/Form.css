@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body, .form {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0; /* Ensure the overlay is on top of other elements */
+}
+  
+.form-container {
+    width: 80%;
+    height: 80%;
+    background-image: url('./assets/bg.png'); /* Apply background image */
+    background-size: cover; /* Ensure the background image covers the container */
+    background-position: center;
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    border-radius: 20px;
+    overflow: hidden; /* Cut off the background at the corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+  }
+
+.background {
+  background-image: url('./assets/bg.png');
+  background-size: fill;
+  background-position: center;
+  width: 100%;
+  height: 100%; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Text color for visibility */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center;
+}
+
+
+.form {
+  width: 95%;
+  padding: 20px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: #000; /* Assuming black text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+}
+
+.stripe-form {
+  width: 95%;
+  padding-top: 50px; /* Adjust padding as needed */
+  /* Avoid overriding display or flex properties here */
+}
+
+/* Specific styles for Stripe elements, if necessary */
+.stripe-form .StripeElement {
+  padding: 20px 0px;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #9ad1a79d;
+}
+
+.progress {
+  height: 100%;
+  background-color: #77bb88;
+  transition: width 0.3s ease; /* Smooth transition for the progress */
+}
+
+.fadeInUp {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.fadeOutUp {
+  animation: fadeOutUp 0.5s ease-out;
+}
+
+#logo {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out 0.25s forwards;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  width: 125px;
+}
+
+.exit, .backArrow{
+  animation: fadeInUp 0.5s ease-out 0.25s forwards;
+  opacity: 0;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+}
+
+
+.statement{
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center !important
+}
+
+.question {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.description {
+    width: 100%;
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: 200;
+    padding-bottom: 30px;
+}
+
+.button, .ok-button {
+    padding: 10px 20px;
+    font-size: 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #000; /* Button background color */
+    color: #fff; /* Button text color */
+    font-family: 'Hanken Grotesk', sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    @media screen and (max-width: 768px) {
+        font-size: 21px;
+    }
+  }
+
+.button:hover, .ok-button:hover {
+    background-color: #444; /* Darker background color on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+  
+.ok-button {
+    font-weight: bold;
+    font-size: 20px !important; 
+    padding: 6px 20px !important;
+    margin-top: 10px; /* Space between input and button */
+    align-self: flex-start; /* Align button to the left */
+}
+
+.answer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Add margin to the top for spacing */
+}
+
+.text {
+  font-size: 20px;
+  margin-right: 5px;
+  margin-left: 15px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.invs {
+  visibility: hidden;
+}
+
+.number, .arrow {
+    font-size: 36px; /* Smaller font size */
+    font-weight: normal; /* Thinner */
+    margin-right: 5px;
+    display: inline-flex;
+    align-items: center; /* Center vertically within their container */
+    justify-content: center;
+    vertical-align: middle;
+  }
+  
+.arrow {
+    width: 30px; /* Set width */
+    height: 30px; /* Set height */
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 36px;
+    border: none;
+    border-bottom: 1px solid #505050;
+    color: #000;
+    background-color: transparent;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 300;
+    transition: box-shadow 0.3s ease; /* Smooth transition for the box shadow */
+    box-shadow: 0 2px 0 0 #505050;
+  }
+  
+  .input:focus, .custom-amount-input:focus {
+    box-shadow: 0 1px 0 #505050, 0 2px 0 #000; /* Smooth shadow transition to mimic border */
+  }
+  .error-message {
+    color: red; /* Set the color of the error message to red */
+    margin-top: 10px; /* Add some space above the error message */
+    font-weight: 400;
+  }
+  
+  
+
+.input::placeholder {
+  color: #505050; /* Light grey placeholder text */
+}
+
+.slide4{
+  font-size: 22px !important;
+}
+
+.multiple-choice {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+ }
+  
+  .amount-button {
+    display: flex; /* Use flex to align items */
+    justify-content: flex-start; /* Align text to the left */
+    align-items: center; /* Center text vertically */
+    text-align: left; /* Align text to the left */
+    padding: 10px 1vw; /* Adjust padding as needed */
+    margin: 1vw;
+    font-size: 36px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #7ad997; /* Updated color to green */
+    color: #272727;
+    border: none;
+    border-radius: 4px; /* Make buttons rounder */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: calc(100% / 3 - 2vw); /* Make buttons equal width and responsive */
+    box-sizing: border-box; /* Ensure padding and border are included in width calculation */
+}
+  
+  .amount-button.selected {
+    background-color: #5cb369; /* Slightly darker green for selected state */
+    text-align: left;
+}
+  
+  .amount-button:hover {
+    background-color: #5a9a8a;
+    transform: scale(1.05);
+}
+.custom-amount-input {
+    display: flex; /* Use flex to align items */
+    justify-content: flex-start; /* Align text to the left */
+    align-items: center; /* Center text vertically */
+    text-align: left; /* Align text to the left */
+    padding: 10px 1vw; /* Adjust padding as needed */
+    margin: 1vw;
+    font-size: 36px;
+    border: none;
+    border-bottom: 1px solid #505050;
+    color: #000;
+    background-color: transparent;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Hanken Grotesk', sans-serif;
+    transition: box-shadow 0.3s ease; /* Smooth transition for the box shadow */
+    border-radius: 0px;
+  }
+  .custom-amount-input:focus {
+    transform: scale(1) !important;
+    background-color: #ececec00; /* Ensure background color stays the same */
+}
+
+.custom-amount-input:hover {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    background-color: transparent;
+    transform: scale(1) !important;
+}
+.credit-card-header {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.credit-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.credit-card-input {
+    width: 80%;
+    margin-bottom: 20px;
+}
+  
+.credit-card-row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+  
+.credit-card-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    border-bottom: 1px solid #505050;
+    background-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+}
+  
+.credit-card-field::placeholder {
+    color: #505050;
+}
+  
+.credit-card-label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+  
+  
+
+  @media (max-width: 600px) {
+
+    .form-container, .stripe-form {
+       justify-content: flex-start;
+
+    }
+    .form{
+      padding-top: 50px;
+    }
+    .question{
+        font-size: 26px;
+        width: 100%;
+    }
+    .text, .enterArrow{
+      opacity: 0;
+    }
+
+
+
+    .custom-amount-input{
+        font-size: 20px !important;
+    }
+
+    .input {
+        font-size: 15px;
+    }
+
+    .amount-button{
+        flex-wrap: nowrap;
+        font-size: 26px;
+    }
+    .description{
+        font-size: 20px;
+        padding-bottom: 0px;
+    }
+    .number{
+      font-size: 18px;
+    }
+    .arrow{
+      width: 20px;
+      height: 20px;
+    }
+
+  }
+  
