@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements, CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import rightArrow from '../assets/rightArrow.svg';
+import Security from '../assets/Stripe.png'
 import '../Form.css'; // Import the CSS file
 
 const stripePromise = loadStripe('pk_test_51PUvGYDnU0bnacSN8IVpRzur6MRgdxgSumM0E2SmFBGcCY1XieKrADjLJlKImzdIiLmFuaNimjMZPlEsWWlLudAH00v0A0af9I');
@@ -57,9 +58,12 @@ const CheckoutForm: React.FC<{ amount: number, nextSlide: () => void }> = ({ amo
         Your credit card will be charged ${amount}.
       </div>
       <CardElement className="card-element" />
-      <button type="submit" className="ok-button" disabled={!stripe}>
-        Submit
-      </button>
+      <div className='submit-stripe' style={{display:'flex', flexDirection:'column'}}>
+        <img src={Security} className='security'/>
+        <button type="submit" className="ok-button" disabled={!stripe}>
+          Submit
+        </button>
+      </div>
     </form>
   );
 };

@@ -345,52 +345,15 @@ body, .form {
     background-color: transparent;
     transform: scale(1) !important;
 }
-.credit-card-header {
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    text-align: center;
+
+.security{
+  width: 150px;
+  padding: 5px 0px 20px 20px
 }
-  
-.credit-card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.card-element{
+  width: 80% !important;
 }
-  
-.credit-card-input {
-    width: 80%;
-    margin-bottom: 20px;
-}
-  
-.credit-card-row {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-}
-  
-.credit-card-field {
-    width: 100%;
-    padding: 10px;
-    font-size: 24px;
-    border: none;
-    border-bottom: 1px solid #505050;
-    background-color: transparent;
-    outline: none;
-    box-sizing: border-box;
-}
-  
-.credit-card-field::placeholder {
-    color: #505050;
-}
-  
-.credit-card-label {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 5px;
-    display: block;
-}
-  
   
 
   @media (max-width: 600px) {
