@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/NGO-Donations/static/css/main.314f8e8f.css",
-    "main.js": "/NGO-Donations/static/js/main.8f2acb74.js",
+    "main.css": "/NGO-Donations/static/css/main.441e78d3.css",
+    "main.js": "/NGO-Donations/static/js/main.3aec719d.js",
     "static/media/logo.png": "/NGO-Donations/static/media/logo.c0e3a15761cec20df598.png",
+    "static/media/Stripe.png": "/NGO-Donations/static/media/Stripe.6013ec944d50be7905aa.png",
     "static/media/enter.svg": "/NGO-Donations/static/media/enter.e4e24dc9debe95e830b8e8dd96a21579.svg",
     "static/media/rightArrow.svg": "/NGO-Donations/static/media/rightArrow.6ae6907b56f169bc72fb4e19b484976c.svg",
     "static/media/exit.svg": "/NGO-Donations/static/media/exit.3679f386ffd792ab51f2aac881e12083.svg",
     "index.html": "/NGO-Donations/index.html",
     "static/media/leftArrow.svg": "/NGO-Donations/static/media/leftArrow.ea4f2017581f7638e04ab0f3be702882.svg",
     "static/media/error.svg": "/NGO-Donations/static/media/error.97ce7b8dc8eb57dbed542e8a8336cb12.svg",
-    "main.314f8e8f.css.map": "/NGO-Donations/static/css/main.314f8e8f.css.map",
-    "main.8f2acb74.js.map": "/NGO-Donations/static/js/main.8f2acb74.js.map"
+    "main.441e78d3.css.map": "/NGO-Donations/static/css/main.441e78d3.css.map",
+    "main.3aec719d.js.map": "/NGO-Donations/static/js/main.3aec719d.js.map"
   },
   "entrypoints": [
-    "static/css/main.314f8e8f.css",
-    "static/js/main.8f2acb74.js"
+    "static/css/main.441e78d3.css",
+    "static/js/main.3aec719d.js"
   ]
 }
